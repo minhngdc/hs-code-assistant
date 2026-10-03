@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Giải pháp – Trợ lý mã HS</title>
+<meta name="description" content="Trợ lý phân loại mã HS có căn cứ cho doanh nghiệp xuất nhập khẩu Việt Nam. Đồ án học phần Dự án Trí tuệ Nhân tạo, Nhóm 8, UEH.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23102F78'/%3E%3Ctext x='32' y='42' font-size='26' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3EHS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#noi-dung">Bỏ qua thanh điều hướng</a>
+<header class="site-header"><div class="container nav-row">
+ <a class="brand" href="index.html" aria-label="Trợ lý mã HS, về trang chủ"><span class="brand-mark" aria-hidden="true">HS</span><span class="brand-text"><b>Trợ lý mã HS</b><span>Nhóm 8, UEH</span></span></a>
+ <nav class="main-nav" id="main-nav" aria-label="Các trang"><ul><li><a href="index.html" data-route="home">Trang chủ</a></li><li><a href="giai-phap.html" data-route="giai-phap" aria-current=page>Giải pháp</a></li><li><a href="cong-nghe.html" data-route="cong-nghe">Công nghệ và dữ liệu</a></li><li><a href="doi-ngu.html" data-route="doi-ngu">Đội ngũ</a></li><li><a href="lo-trinh.html" data-route="lo-trinh">Lộ trình</a></li><li><a href="tai-lieu.html" data-route="tai-lieu">Tài liệu</a></li></ul></nav>
+ <div class="header-actions">
+  <button class="icon-btn" id="theme-btn" type="button" aria-label="Đổi giao diện sáng hoặc tối"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+  <a class="btn btn-primary" href="tai-lieu.html">Tài liệu dự án</a>
+  <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="main-nav"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+ </div>
+</div></header>
+<main id="noi-dung"><section class="page-hero"><div class="container">
+<nav class="crumbs" aria-label="Vị trí trang"><a href="index.html">Trang chủ</a> / <span aria-current="page">Giải pháp</span></nav>
+<h1>Giải pháp</h1><p>Trợ lý phân loại mã HS có căn cứ: đề xuất mã, nêu căn cứ, nói rõ khi nào cần hỏi thêm, và rà soát cả danh mục mặt hàng.</p></div></section>
+<section class="section"><div class="container split">
+ <div><h2 style="font-size:clamp(26px,3vw,36px);font-weight:800;letter-spacing:-.02em;margin-bottom:16px">Tầm nhìn sản phẩm</h2>
+ <p style="color:var(--ink-2);font-size:17px">Dành cho nhân viên xuất nhập khẩu và chuyên viên đại lý hải quan, những người phải chọn mã HS 8 số cho mặt hàng mới và chịu trách nhiệm về nội dung khai. Sản phẩm đưa ra các mã ứng viên kèm tiền lệ, chú giải và quy tắc áp dụng; cho biết khi nào thông tin chưa đủ để phân biệt các mã; và cảnh báo mặt hàng tương tự đang khai khác mã.</p>
+ <p style="color:var(--ink-2)">Đây là định hướng khác biệt, chưa được chứng minh bằng thử nghiệm so sánh.</p></div>
+ <div class="panel"><h3>Phạm vi không làm</h3><ul><li>Không quyết định mã thay người khai</li><li>Không tự điền tờ khai, không kết nối trực tiếp phần mềm khai báo ở MVP</li><li>Không xác định trị giá hay xuất xứ</li><li>Kết quả không có giá trị pháp lý</li></ul></div>
+</div></section>
+
+<section class="section tint"><div class="container">
+ <div class="sec-head"><h2>Cách hoạt động</h2><p>Năm bước bám theo trình tự phân loại theo quy định. Nhãn bên phải cho biết bước nào đã chạy thử, bước nào còn là kế hoạch.</p></div>
+ <ol class="steps"><li><div><h3>Kiểm tra thông tin</h3><p>Trích các thuộc tính quyết định: thành phần, cấu tạo, công dụng, dạng hàng, bao bì. Thiếu thông tin thì dừng và liệt kê phần cần bổ sung, không đoán mã.</p></div><span class="badge todo">Kế hoạch</span></li><li><div><h3>Sinh mã ứng viên</h3><p>Tìm tiền lệ theo từ khóa và theo nghĩa, kể cả tiền lệ tiếng Anh; khớp với mô tả trong danh mục để không bỏ sót mã chưa có tiền lệ.</p></div><span class="badge done">Đã chạy</span></li><li><div><h3>Áp dụng sáu quy tắc</h3><p>Đối chiếu nội dung nhóm và chú giải; áp QT2–QT5 khi cần; QT6 so sánh các phân nhóm cùng cấp để xuống dòng 8 số.</p></div><span class="badge todo">Kế hoạch</span></li><li><div><h3>Đo độ bất định</h3><p>Đưa ra tập mã chứa mã đúng với xác suất cho trước (conformal prediction); tập rộng nghĩa là cần thêm thông tin.</p></div><span class="badge todo">Kế hoạch</span></li><li><div><h3>Lập phiếu phân loại</h3><p>Ghi căn cứ, quy tắc đã áp dụng, lý do loại trừ mã cạnh tranh; người khai chọn mã và ghi lý do.</p></div><span class="badge todo">Kế hoạch</span></li></ol>
+ <p class="note-box">Song song, một mô-đun rà cả danh mục hàng của doanh nghiệp để tìm mặt hàng giống nhau mà đang khai khác mã. Mọi kết quả chỉ để tham khảo; người khai chọn mã và ghi lý do.</p>
+</div></section>
+
+<section class="section"><div class="container">
+ <div class="sec-head"><h2>Đầu ra: phiếu phân loại HS</h2><p>Phiếu cho phép người kiểm tra lần theo đường đi từ hàng hóa, qua các quy tắc và tài liệu, đến mã kết luận.</p></div>
+ <div class="fields"><div><b>01</b><span>Mã hồ sơ, thời điểm, phiên bản Danh mục</span></div><div><b>02</b><span>Tên thương mại, tên kỹ thuật</span></div><div><b>03</b><span>Thành phần, cấu tạo, công dụng, nguyên lý, dạng hàng, bao bì</span></div><div><b>04</b><span>Thông tin còn thiếu và đề nghị bổ sung</span></div><div><b>05</b><span>Các nhóm 4 số có thể cạnh tranh</span></div><div><b>06</b><span>QT1: nội dung nhóm và chú giải liên quan</span></div><div><b>07</b><span>QT2–QT5: có áp dụng hay không, lý do</span></div><div><b>08</b><span>QT6: các phân nhóm, dòng 8 số cùng cấp đã so sánh</span></div><div><b>09</b><span>Tài liệu bổ trợ đã dùng và trích dẫn</span></div><div><b>10</b><span>Tiền lệ: thông báo của hàng hóa tương tự</span></div><div><b>11</b><span>Mã đề xuất và tập mã có mức tin cậy</span></div><div><b>12</b><span>Lý do loại trừ từng mã cạnh tranh</span></div><div><b>13</b><span>Khuyến nghị bước tiếp</span></div><div><b>14</b><span>Quyết định của người khai và lý do</span></div></div>
+</div></section>
+
+<section class="section tint"><div class="container">
+ <div class="sec-head"><h2>Hai kịch bản sử dụng</h2><p>Kịch bản A dùng hằng ngày khi có mặt hàng mới; kịch bản B dùng định kỳ để rà soát.</p></div>
+ <div class="split">
+  <div class="panel"><h3>A. Tra mã cho một mặt hàng mới</h3><ol><li>Nhập tên hàng, thành phần, cấu tạo, công dụng, thông số; tải catalogue nếu có.</li><li>Nhận ba mã 8 số kèm căn cứ trích dẫn và mức tin cậy.</li><li>Nếu chưa đủ căn cứ: xem thông tin còn thiếu và bước nên làm tiếp.</li><li>Chọn mã, ghi lý do; hệ thống lưu nhật ký và xuất phiếu phân loại.</li></ol></div>
+  <div class="panel"><h3>B. Rà soát cả danh mục</h3><ol><li>Tải tệp danh mục mặt hàng kèm mã đang khai (Excel, CSV).</li><li>Xem các cặp mô tả tương tự nhưng mang mã khác nhau.</li><li>Quyết định sửa; sai sót đã thông quan có thể khai bổ sung trong 60 ngày theo quy định.</li></ol></div>
+ </div>
+ <figure style="margin:28px 0 0"><div class="window"><div class="window-bar"><span></span><span></span><span></span></div><img src="assets/mockup.jpg" alt="Mockup màn hình tra mã cho một mặt hàng" width="1400" height="866" loading="lazy"></div>
+ <figcaption class="caption">Mockup minh họa dựa trên Thông báo 21113/TB-CHQ.</figcaption></figure>
+</div></section>
+
+<section class="section"><div class="container">
+ <div class="sec-head"><h2>So sánh với công cụ hiện có</h2><p>Tra cứu mã HS bằng AI đã có công cụ miễn phí; Cục Hải quan còn dự kiến xây dựng trợ lý ảo tra cứu mã số trong dự án Hải quan số giai đoạn 2026–2028.</p></div>
+ <div class="table-wrap "><table><thead><tr><th>Công cụ</th><th>Gợi ý mã</th><th>Căn cứ, trích dẫn</th><th>Rà soát danh mục</th><th>Khi chưa chắc chắn</th><th>Chi phí</th></tr></thead><tbody><tr><td><b>Chatbot AI của Cục Hải quan</b></td><td>Có, ở mức tham khảo; chạy trên AWS với mô hình ngôn ngữ lớn và truy xuất tri thức</td><td>Có (quan sát 1 phiên)</td><td>Không có trong chức năng công bố</td><td>Hướng dẫn liên hệ bộ phận hỗ trợ (1 phiên)</td><td>Miễn phí</td></tr><tr><td><b>ECUS.AI</b></td><td>Có, tích hợp phần mềm khai báo</td><td>Chưa có thông tin</td><td>Chưa có thông tin</td><td>Chưa có thông tin</td><td>Miễn phí trong thí điểm</td></tr><tr><td><b>GPT “Tham khảo chính sách mã số XNK”</b></td><td>Có; trả đúng các mặt hàng ví dụ trong phép thử không chính thức của nhóm</td><td>Có dẫn tài liệu (quan sát)</td><td>Không quan sát thấy</td><td>Khuyến cáo bổ sung thông tin (1 phiên)</td><td>Cần tài khoản ChatGPT</td></tr><tr><td><b>Tra cứu thủ công</b></td><td>Người dùng tự tra biểu thuế, chú giải</td><td>Người dùng tự trích</td><td>Không</td><td>Người dùng tự quyết</td><td>Miễn phí</td></tr><tr><td><b>Sản phẩm của nhóm (mục tiêu)</b></td><td>Tập mã có mức tin cậy</td><td>Bắt buộc, có kiểm tra trích dẫn</td><td>Có</td><td>Liệt kê thông tin còn thiếu, đề xuất bước tiếp</td><td>Chưa định giá</td></tr></tbody></table></div>
+ <p class="table-note">Cột của sản phẩm nhóm là mục tiêu thiết kế. Nhóm chưa tìm thấy công bố về độ chính xác của các công cụ trên một tập kiểm thử có kết luận chính thức; con số 99,78% mà Chatbot AI công bố là tỷ lệ phản hồi thành công. Vì vậy nhóm sẽ đo tất cả trên cùng một tập trước khi kết luận.</p>
+</div></section>
+
+<section class="section tint"><div class="container">
+ <div class="sec-head"><h2>Câu hỏi thường gặp</h2><p>Trả lời theo đúng hiện trạng của dự án.</p></div>
+ <div class="acc"><details><summary>Sản phẩm có thay thế quyết định của hải quan không?</summary><div class="acc-body"><p>Không. Kết quả chỉ để tham khảo. Người khai chịu trách nhiệm về nội dung khai (Luật Hải quan 2014, Điều 18); khi có tranh chấp, cơ quan hải quan là bên xác định mã.</p></div></details><details><summary>Khác gì Chatbot AI của Cục Hải quan và các GPT tra cứu mã số?</summary><div class="acc-body"><p>Các công cụ này đã hỗ trợ gợi ý mã HS miễn phí. Sản phẩm của nhóm tập trung vào phần các công cụ đó không làm theo chức năng đã công bố: phiếu phân loại lưu vết theo từng quy tắc và trích dẫn, rà soát nhất quán cả danh mục mặt hàng, chạy nội bộ để bảo vệ thông tin sản phẩm. Nhóm sẽ đo độ chính xác của các công cụ và của hệ thống nhóm trên cùng một tập kiểm thử trước khi kết luận.</p></div></details><details><summary>Dữ liệu lấy từ đâu?</summary><div class="acc-body"><p>Thông báo xác định trước mã số công khai trên cổng Cục Hải quan; biểu thuế song ngữ 2026 và chú giải chi tiết HS 2022 do Chi cục Hải quan khu vực VIII biên tập, chia sẻ để tham khảo; ruling công khai của Hải quan Mỹ (CROSS); danh mục HS 2022. Nhóm tải thủ công, không vượt captcha, ẩn danh tên doanh nghiệp và mã số thuế.</p></div></details><details><summary>Mô hình đã chạy được đến đâu?</summary><div class="acc-body"><p>Đã có baseline BM25 và TF-IDF + hồi quy logistic trên dữ liệu CROSS, thử nghiệm conformal sơ bộ, và OCR thử trên 6 văn bản Việt Nam (đọc đúng mã 8 số ở cả 6, mẫu còn nhỏ). Các bước còn lại thuộc Sprint 2–4.</p></div></details><details><summary>Dữ liệu của doanh nghiệp có bị gửi ra ngoài không?</summary><div class="acc-body"><p>Thiết kế ưu tiên chạy trên máy nội bộ. Nếu dùng mô hình ngôn ngữ qua API, chỉ phần mô tả hàng hóa đã ẩn danh được gửi đi. Nhóm chỉ dùng dữ liệu mặt hàng của doanh nghiệp khi có thỏa thuận bảo mật.</p></div></details></div>
+</div></section></main>
+<footer class="site-footer"><div class="container">
+ <div class="footer-grid">
+  <div><div class="footer-brand"><span class="brand-mark" aria-hidden="true">HS</span><b>Trợ lý mã HS</b></div><p>Trợ lý phân loại mã HS có căn cứ cho doanh nghiệp xuất nhập khẩu Việt Nam. Đồ án học phần, không phải sản phẩm thương mại.</p></div>
+  <div><h2>Các trang</h2><ul><li><a href="index.html">Trang chủ</a></li><li><a href="giai-phap.html">Giải pháp</a></li><li><a href="cong-nghe.html">Công nghệ và dữ liệu</a></li><li><a href="doi-ngu.html">Đội ngũ</a></li><li><a href="lo-trinh.html">Lộ trình</a></li><li><a href="tai-lieu.html">Tài liệu</a></li></ul></div>
+  <div><h2>Nhóm 8</h2><ul><li>Học phần Dự án Trí tuệ Nhân tạo</li><li>Mã lớp học phần 26C1TEC55001302</li><li>Giảng viên ThS. Tạ Việt Phương</li><li>Trường Đại học Kinh tế TP. Hồ Chí Minh</li></ul></div>
+  <div><h2>Lưu ý</h2><p>Kết quả của trợ lý chỉ để tham khảo. Người khai hải quan chịu trách nhiệm về nội dung khai (Luật Hải quan 2014, Điều 18).</p></div>
+ </div>
+ <div class="footer-bottom"><span>Cập nhật lần cuối: 03/10/2026</span><span>Nhóm 8: Nguyễn Đức Minh, Vương Nguyễn Ngọc Hân, Huỳnh Kỳ Quế, Đậu Thị Khánh Linh</span></div>
+</div></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
